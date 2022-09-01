@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PAV II Javascript</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    
+    <!-- <script>
+      alert("Hola mundo desde una ventana")
+    </script> -->
+    <link rel="stylesheet" href="styles.css" />
+    <nav>
+    <a href="/index.html">Clase 1</a>
+    <a href="/clase2.html">Clase 2</a>
+  </nav> 
+    
+  </head>
+  <body>
+    <h1>Programación en Javascript</h1>
+    <p id="mensaje"></p>
+    <form>
+      <div>
+        <label>Número 1</label>
+        <input type="text" id="a1" name="a1">
+      </div>
+      <div>
+      <label>Número 2</label>
+      <input type="text" id="a2" name="a2">
+    </div>
+    </form>
+    <input type="button" id="btn" name="btn" value="Sumar" onclick="sumar();">
+
+    <script>
+      // document.write("Hola mundo en el browser")
+      var bandera = true;
+      var a3 = 10;
+      console.log("tipo de dato de bandera "+(typeof bandera));
+      console.log("tipo de dato de a3 "+(typeof a3));
+      function sumar(){
+        var a1= Number(document.getElementById("a1").value);
+        var a2= Number(document.getElementById("a2").value);
+        alert("la suma de a1 y a2 es " +(a1+a2).toString());
+      } 
+
+    </script>
+
+    <script src="probando.js"></script>    
+
+  </body>
+</html>
